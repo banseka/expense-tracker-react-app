@@ -15,11 +15,13 @@ export default function AddTransaction() {
       amount: +amount
     };
     addTransaction(newTransaction)
+    setAmount(0)
+    setText("")
   };
 
   return (
-    <>
-      <h3>add new transaction</h3>
+    <div className='add-transaction'>
+      <h3 className='add-trans-header'>add new transaction</h3>
       <form id='form' onSubmit={submitTransaction}>
         <div className='form-control'>
           <label htmlFor='text'>text</label>
@@ -44,6 +46,6 @@ export default function AddTransaction() {
           <button className='add-trans-btn'>Add Transaction</button>
         </div>
       </form>
-    </>
+    </div>
   );
 }

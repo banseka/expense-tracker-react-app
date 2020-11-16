@@ -10,8 +10,9 @@ import {GlobalProvider} from './context/GlobalContext'
 function App() {
   return (
     <GlobalProvider>
-      <Header />
+      
       <div className='container'>
+        <Header />
         <Balance />
         <IncomeExpenses />
         <TransactionList />
