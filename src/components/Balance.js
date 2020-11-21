@@ -7,8 +7,8 @@ export default function () {
   const total = amounts.reduce((acc, cur) => (acc += cur)).toFixed(2);
   return (
     <div className='balance-container'>
-      <h4>your balance</h4>
-      <h1 id='balance'>${total}</h1>
+      <h4 className='balance-header'>your balance</h4>
+      <h1 className='balance'>${total}</h1>
     </div>
   );
 }

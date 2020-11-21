@@ -1,58 +1,88 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.container{
+.container {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: space-between;
+  justify-content: center;
+  align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  width: 300px;
-  height: 90vh;
+  width: 20em;
   border: none;
   box-shadow: 0 2px 5px rgb(75, 71, 71);
   border-radius: 10px;
 }
-.header{
-  margin: 0 auto;
-  font-size: 2em;
-  color: rgb(73, 69, 69);
+.header {
+  font-size: 1.6em;
+  color: rgb(22, 21, 21);
+  text-transform: uppercase;
+  letter-spacing: 1;
+  padding: 0.8em 0.5em 0 0.5em;
 }
-.balance-container{
-  margin-left: 20px;
+.balance-container {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
   text-transform: capitalize;
+  text-align: center;
 }
-.inc-exp-container{
-  display: flex;
-  justify-content: space-between;
-  text-transform: capitalize;
+.balance-header {
+  font-size: 1.2em;
+  font-weight: 600;
 }
-.income-container{
-  margin-left: 20px;
+.balance {
+  color: rgb(16, 14, 150);
 }
-.expense-container{
+.inc-exp-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 4em;
+  padding: 1em;
+}
+.income-container {
+  text-transform: uppercase;
+  font-size: 1.2em;
   margin-right: 20px;
 }
-.history-header, .list{
-  margin: 0 auto;
+.money-plus {
+  color: green;
+  font-size: 1.2em;
+  font-weight: bold;
 }
-.add-trans-header{
-  margin-left: 60px;
-  text-transform: capitalize;
+.expense-container {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  margin-left: 20px;
 }
-form{
-  margin-left: 10px;
+.money-minus {
+  color: red;
+  font-size: 1.2em;
+  font-weight: bold;
 }
-label{
-  text-transform: capitalize;
+.history-header {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.9em;
 }
-input{
-  height: 25px;
-  border: none;
-  box-shadow: 0 1.5px 3px rgb(104, 100, 100);
-  margin-left: 10px;
+.list {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  list-style: none;
+  margin: auto 0;
 }
 
+.list li {
+  display: flex;
+  padding: 10px 20px;
+  margin: 5px 0px;
+  border: 1px solid black;
+  align-content: space-between;
+}
+
+.list li button {
+  text-align: right;
+}

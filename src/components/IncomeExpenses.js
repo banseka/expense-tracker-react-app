@@ -17,13 +17,13 @@ export default function IncomeExpenses() {
       <div className='income-container'>
         <h4>income</h4>
         <p  className='money-plus'>
-          {income}
+         ${income}
         </p>
       </div>
       <div className='expense-container'>
         <h4>expense</h4>
         <p className='money-minus'>
-          {expense}
+         ${expense}
         </p>
       </div>
     </div>
