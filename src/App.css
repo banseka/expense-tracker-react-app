@@ -12,12 +12,13 @@
   font-family: Arial, Helvetica, sans-serif;
   width: 20em;
   border: none;
-  box-shadow: 0 2px 5px rgb(75, 71, 71);
+  box-shadow: 0 2px 5px rgb(83, 79, 79);
   border-radius: 10px;
+  background-color: rgb(253, 251, 251);
+  color: #070707;
 }
 .header {
   font-size: 1.6em;
-  color: rgb(22, 21, 21);
   text-transform: uppercase;
   letter-spacing: 1;
   padding: 0.8em 0.5em 0 0.5em;
@@ -68,21 +69,73 @@
   padding: 0.9em;
 }
 .list {
-  display: flex;
-  align-items: flex-start;
-  position: relative;
   list-style: none;
   margin: auto 0;
+  width: 100%;
 }
 
-.list li {
+.list > li {
   display: flex;
-  padding: 10px 20px;
-  margin: 5px 0px;
-  border: 1px solid black;
-  align-content: space-between;
+  padding: 10px 5px 10px 10px;
+  width: 100%;
+  border: 1px solid rgb(192, 188, 188);
+  justify-content: space-between;
+  font-size: 1.2em;
+  text-transform: capitalize;
 }
-
-.list li button {
-  text-align: right;
+.plus {
+  border-right: 2px;
+  border-right-color: green;
+}
+.delete-btn {
+  border: none;
+  font-size: 1.2em;
+  padding-left: 10px;
+}
+.add-transaction {
+  padding-top: 1.2em;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.text {
+  padding: 1.2em 0.5em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.text > label {
+  font-size: 1.2em;
+}
+.text > input {
+  border: none;
+  font-size: 1.2em;
+  padding: 0 0.2em;
+  box-shadow: 1px 3px 2px rgba(172, 167, 167, 0.432);
+}
+.amount {
+  padding: 1.2em 0.5em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.amount > label{
+  font-size: 1.2em;
+}
+.amount > label> p{
+  font-size: 0.8em;
+}
+.amount > input {
+  border: none;
+  font-size: 1.2em;
+  padding: 0 0.2em;
+  box-shadow: 1px 3px 2px rgba(128, 128, 128, 0.432);
+  margin-bottom: 1em;
+}
+.add-trans-btn{
+  font-size: 1.2em;
+  padding: 0.5em;
+  border: none;
+  background-color: blue;
+  color: #ffffff;
 }

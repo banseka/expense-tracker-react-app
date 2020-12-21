@@ -23,8 +23,8 @@ export default function AddTransaction() {
     <div className='add-transaction'>
       <h3 className='add-trans-header'>add new transaction</h3>
       <form id='form' onSubmit={submitTransaction}>
-        <div className='form-control'>
-          <label htmlFor='text'>text</label>
+        <div className='form-control text'>
+          <label htmlFor='text'>transaction</label>
           <input
             type='text'
             value={text}
@@ -32,10 +32,10 @@ export default function AddTransaction() {
             placeholder='Enter text...'
           />
         </div>
-        <div className='form-control'>
+        <div className='form-control amount'>
           <label htmlFor='amount'>
             Amount <br />
-            (negative - expenses, positive - income)
+            <p>(negative - expenses, positive - income)</p> 
           </label>
           <input
             type='number'

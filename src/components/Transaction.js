@@ -13,13 +13,14 @@ export default function Transaction({ transaction }) {
 
       <span>
         {sign}${Math.abs(transaction.amount)}
-      </span>
-      <span
+        <button
         className='delete-btn'
         onClick={() => deleteTransaction(transaction.id)}
       >
         X
+      </button>
       </span>
+      
     </li>
   );
 }
