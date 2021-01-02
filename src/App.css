@@ -140,3 +140,7 @@
   background-color: blue;
   color: #ffffff;
 }
+.add-trans-btn:hover{
+ background-color: #fff;
+ color: blue; 
+}
