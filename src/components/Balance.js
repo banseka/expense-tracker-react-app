@@ -4,7 +4,10 @@ import { GlobalContext } from "../context/GlobalContext";
 export default function () {
   const { transactions } = useContext(GlobalContext);
   const amounts = transactions.map((item) => item.amount);
-  const total = amounts.reduce((acc, cur) => (acc += cur)).toFixed(2);
+  const total =
+    amounts.length <= 0
+      ? 0.00
+      : amounts.reduce((acc, cur) => (acc += cur)).toFixed(2);
   return (
     <div className='balance-container'>
       <h4 className='balance-header'>your balance</h4>

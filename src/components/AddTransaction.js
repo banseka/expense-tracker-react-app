@@ -9,6 +9,10 @@ export default function AddTransaction() {
 
   const submitTransaction = (e) => {
     e.preventDefault();
+
+    if (text.length <= 0 || amount === 0) {
+      return null
+    }
     const newTransaction = {
       id: Math.floor(Math.random() * 10000000),
       text,
